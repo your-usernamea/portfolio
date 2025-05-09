@@ -6,11 +6,11 @@
       "use": "@vercel/static"
     },
     {
-      "src": "portfolio/blob/main/portfolio.css",
+      "src": "portfolio.css",
       "use": "@vercel/static"
     },
     {
-      "src": "portfolio/blob/main/portfolio.js",
+      "src": "portfolio.js",
       "use": "@vercel/static"
     }
   ],
