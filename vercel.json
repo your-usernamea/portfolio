@@ -4,18 +4,24 @@
     {
       "src": "index.html",
       "use": "@vercel/static"
+    },
+    {
+      "src": "portfolio/blob/main/portfolio.css",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "portfolio/blob/main/portfolio.js",
+      "use": "@vercel/static"
     }
   ],
   "routes": [
     {
+      "src": "/portfolio/blob/main/(.*)",
+      "dest": "/portfolio/blob/main/$1"
+    },
+    {
       "src": "/(.*)",
       "dest": "/index.html"
-    }
-  ],
-  "rewrites": [
-    {
-      "source": "/portfolio/blob/main/(.*)",
-      "destination": "/portfolio/blob/main/$1"
     }
   ]
 }
