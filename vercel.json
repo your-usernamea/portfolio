@@ -8,12 +8,14 @@
   ],
   "routes": [
     {
-      "src": "/(portfolio\\.css|portfolio\\.js|ana\\.png|1\\.png)",
-      "dest": "/$1"
-    },
-    {
       "src": "/(.*)",
       "dest": "/index.html"
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/portfolio/blob/main/(.*)",
+      "destination": "/portfolio/blob/main/$1"
     }
   ]
 }
